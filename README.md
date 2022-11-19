@@ -1,6 +1,10 @@
 # Esta é uma implementação inicial, contemplando recursos da tela de Perfil
     Nesta primeira implementação está a página de perfil do usuário,
-    onde o mesmo poderá acompanhar seu progresso perante seu time, e suas atividades. A página está responsiva utilizando Boostrap.
+    onde o mesmo poderá acompanhar seu progresso perante seu time, e suas atividades. 
+    A página está responsiva utilizando Boostrap.
+    
+    Este repositório esta hospedado na Vercel:
+    https://next-qdtu4oizz-leooramalho.vercel.app/
 
 # APP NEXT ESG
 
