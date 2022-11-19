@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Col, Row, Container, Card, ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Col, Row, Container, Card, ListGroup, ListGroupItem, Button } from 'react-bootstrap'
 import profilePic from "../public/images/profile-pic.jpg"
 import styles from "../styles/Profile.module.css"
 
@@ -25,9 +25,9 @@ export default function Perfil() {
             </Col>
           </Col>
           <Col xs={12} md={5} className="mx-auto px-0">
-            <Card className='shadow mt-3 pt-1 pb-2 px-2'>
+            <Card className='shadow mt-3 pt-1 pb-2 pt-md-2 pb-md-3 px-2 card'>
               <Card.Title className={`${styles.title} text-primary`}>Quem sou eu</Card.Title>
-              <Card.Text className={styles.cardText}>
+              <Card.Text className={`${styles.cardText} p-0 p-md-2`}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                 ligula felis, gravida ac arcu non, tempor aliquet ipsum. Aliquam neque
                 lorem, dapibus in sagittis non, maximus sit amet quam.
@@ -50,8 +50,7 @@ export default function Perfil() {
                     <div className={styles.dialLabel}>Conquistas<br />Obtidas</div>
                   </Col>
                 </Row>
-                <hr className='my-2' />
-                <div className={`${styles.title} text-muted`}>Ultimas Registradas</div>
+                <div className={`${styles.title} text-muted mt-3`}>Ultimas Registradas</div>
                 <ListGroup>
                   <ListGroupItem className='d-flex align-items-center py-1 px-2'>
                     <div>Academia</div>
@@ -66,11 +65,14 @@ export default function Perfil() {
                     <div className="ms-auto badge badge-sm bg-success">+9</div>
                   </ListGroupItem>
                 </ListGroup>
+                <div className='text-center mt-2'>
+                  <Button className='btn-sm bg-primary'>Criar nova atividade</Button>
+                </div>
               </Card.Body>
             </Card>
           </Col>
           <Col xs={12} md={5} className="mx-auto px-0">
-            <Card className='shadow mt-3 pt-1 pb-2 px-2'>
+            <Card className='shadow mt-3 pt-1 pb-2 pt-md-2 pb-md-3 px-2 card'>
               <Card.Title className={`${styles.title} text-primary`}>Minha Equipe</Card.Title>
               <Card.Body className='py-0 px-3'>
                 <ListGroup>
@@ -93,6 +95,9 @@ export default function Perfil() {
                 </ListGroup>
                 <div className={`${styles.title} text-muted mt-2`}>Ciclos que Venci</div>
                 <div className={`${styles.dialNumber} text-center`}>2</div>
+                <div className='text-center mt-2'>
+                  <Button className='btn-sm bg-primary'>Ver minha equipe</Button>
+                </div>
               </Card.Body>
             </Card>
           </Col>
